@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
   font-display: swap;
   font-family: "Play";
@@ -34,6 +35,7 @@
     format("woff2");
 }
 
+/* Variables */
 :root {
   --primary-color-light: #ffffff;
   --primary-color-blue: #2b7fff;
@@ -42,4 +44,56 @@
   --secondary-color-gray-light: #747272;
   --secondary-color-dark: #f5f5f5;
   --secondary-color-yellow: #ffd02b;
+}
+
+/* General */
+body {
+  color: var(--primary-color-dark);
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Links */
+.link {
+  color: var(--primary-color-dark);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.link:hover {
+  color: var(--primary-color-blue);
+  font-weight: 700;
+}
+
+.simple-text {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+/* Hero section */
+.hero-title {
+  color: var(--primary-color-blue);
+  font-family: Play, sans-serif;
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.8;
+  text-transform: capitalize;
+}
+
+.button {
+  color: var(--primary-color-light);
+  background-color: var(--primary-color-blue);
+  border: 20px solid var(--primary-color-blue);
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
 }
